@@ -1,0 +1,67 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.objectbox'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "29.0.1"
+    defaultConfig {
+        applicationId "mx.com.cesarcorona.demo"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "RICK Y MORTY V.1"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    useLibrary 'org.apache.http.legacy'
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+
+    //logs
+    implementation 'ua.at.tsvetkov:taolog:1.4.6@aar'
+
+    //libreria usada para la carga de imagenes, hace el manejo de request en segundo plano y
+    //manejo de cache de las mismas
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+
+    //libreria para los request al API, tambien se encarga del manejo de los hilos
+    implementation 'dev.dworks.libs:volleyplus:0.1.4'
+
+    //libreria para el mapeo entre POJO y json strings
+    implementation 'com.google.code.gson:gson:2.8.5'
+
+    //circle images
+    implementation 'de.hdodenhof:circleimageview:3.0.1'
+
+
+    //progress
+    implementation 'com.samigehi:loadingview:1.1'
+
+    //dialogs
+    implementation 'com.github.TecOrb-Developers:SmartAlertDialog:v1.0'
+
+
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:gravity="center">
+
+
+
+    <ImageView
+
+        android:scaleType="centerCrop"
+        android:background="@drawable/background_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/fondo" />
+
+
+
+    <ImageView
+        android:layout_marginTop="36dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/logorick"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/rickymorty" />
+
+
+
+
+</RelativeLayout>

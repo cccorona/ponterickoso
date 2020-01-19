@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Rick &amp; Morty</string>
+    <string name="no_internet">No hay conexion a Internet</string>
+
+    <string name="title_activity_splash">@string/app_name</string>
+    <string name="fondo">fondo</string>
+    <string name="rickymorty">rickymorty</string>
+    <string name="buscar">Find</string>
+    <string name="status">Status:</string>
+    <string name="specie">Species:</string>
+    <string name="origen">Origin:</string>
+    <string name="locacion">Location:</string>
+    <string name="genero">Gender:</string>
+    <string name="creado">Created:</string>
+    <string name="eposidios">Episodes:</string>
+    <string name="left"><![CDATA[<]]></string>
+    <string name="right"><![CDATA[>]]></string>
+    <string name="select_page">Select page:</string>
+
+</resources>
